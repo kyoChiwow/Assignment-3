@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
+  <!-- Tailwind and DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN  -->
+  <script src="https://kit.fontawesome.com/da4da1c212.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    .manrope {
+  font-family: "Manrope", sans-serif;
+  }
+  </style>
+
+  <!-- Tailwind Color Style CDN -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-header': '#212121',
+            'primary-para': '#494949',
+            'primary-nav': '#737373',
+            'primary-btn': '#1C1C1C',
+            'footer-items': '#E9E9E9',
+            'bg-white-full': 'rgba(255, 255, 255, 1)',
+            'bg-white-none': 'rgba(255, 255, 255, 0)',
+            'bg-btn-light': 'rgba(171, 239, 95, 0.5)',
+            'bg-btn-full': 'rgba(171, 239, 95, 1)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="manrope ">
+  <header class="">
+  <!-- NavBar here -->
+    <nav class="container mx-auto flex items-center justify-between pt-10">
+     <!-- Nav left -->
+      <div class="flex gap-2 items-center">
+        <div><i class="fa-solid fa-arrow-right bg-bg-btn-full p-1.5 w-[105%] rounded-full rotate-[320deg]"></i></div>
+        <div><h1 class="text-primary-header font-extrabold text-3xl"> Rinterio</h1></div>
+      </div>
+     <!-- Nav middle -->
+      <div>
+        <ul class="flex gap-5">
+          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2" href=""><span class="font-extrabold text-primary-para">Home</span></a></li>
+          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Services</a></li>
+          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Portfolio</a></li>
+          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Blogs</a></li>
+          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Contact Us</a></li>
+        </ul>
+      </div>
+     <!-- Nav right -->
+      <div class="flex items-center gap-5">
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+          <button class="btn rounded-full bg-bg-btn-full">Book Consult <i class="fa-solid fa-arrow-right bg-primary-btn text-white p-1.5 rounded-full rotate-[320deg] w-[26px]"></i></button>
+        </div>
+        <div class="dropdown lg:hidden">
+          <div tabindex="0" role="button" class="btn m-1">Click</div>
+          <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- Banner here -->
+   <div class="container mx-auto border mt-12">
+    <!-- banner image -->
+     <div class="flex justify-center">
+      <img src="assets/banner.png" alt="">
+     </div>
+    <!-- banner header -->
+     <div class="mx-auto text-center lg:w-[60%] mt-6">
+      <h1 class="text-primary-header font-extrabold text-6xl">A barn house of this design has a striking appearance</h1>
+     </div>
+    <!-- banner para -->
+     <div class="mx-auto lg:w-[62%] mt-6">
+      <p class="text-primary-para font-medium text-center">
+        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+      </p>
+     </div>
+    <!-- banner btn -->
+     <div class="btn mt-6">
+      <button>View Details</button>
+     </div>
+   </div>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
