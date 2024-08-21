@@ -32,8 +32,9 @@
             'primary-nav': '#737373',
             'primary-btn': '#1C1C1C',
             'footer-items': '#E9E9E9',
-            'bg-white-full': 'rgba(255, 255, 255, 1)',
-            'bg-white-none': 'rgba(255, 255, 255, 0)',
+            'bg-offwhite': '#F0F0F0',
+            'bg-white': 'rgba(255, 255, 255, 1)',
+            'bg-white-none': 'rgba(0, 0, 0, 0)',
             'bg-btn-light': 'rgba(171, 239, 95, 0.5)',
             'bg-btn-full': 'rgba(171, 239, 95, 1)',
           }
@@ -42,8 +43,8 @@
     }
   </script>
 </head>
-<body class="manrope ">
-  <header class="">
+<body class="manrope">
+  <header class="overflow-x-hidden p-3 bg-gradient-to-t from-bg-white to-bg-offwhite">
   <!-- NavBar here -->
     <nav class="container mx-auto flex items-center justify-between pt-10">
      <!-- Nav left -->
@@ -53,49 +54,53 @@
       </div>
      <!-- Nav middle -->
       <div>
-        <ul class="flex gap-5">
-          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2" href=""><span class="font-extrabold text-primary-para">Home</span></a></li>
-          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Services</a></li>
-          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Portfolio</a></li>
-          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Blogs</a></li>
-          <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Contact Us</a></li>
+        <ul class="hidden lg:flex gap-5">
+          <li><a class="hover:bg-gray-50 hover:rounded-xl p-2" href=""><span class="font-extrabold text-primary-para">Home</span></a></li>
+          <li><a class="hover:bg-gray-50 hover:rounded-xl p-2 text-primary-nav" href="">Services</a></li>
+          <li><a class="hover:bg-gray-50 hover:rounded-xl p-2 text-primary-nav" href="">Portfolio</a></li>
+          <li><a class="hover:bg-gray-50 hover:rounded-xl p-2 text-primary-nav" href="">Blogs</a></li>
+          <li><a class="hover:bg-gray-50 hover:rounded-xl p-2 text-primary-nav" href="">Contact Us</a></li>
         </ul>
       </div>
      <!-- Nav right -->
       <div class="flex items-center gap-5">
-        <div><i class="fa-solid fa-magnifying-glass"></i></div>
-        <div><i class="fa-solid fa-cart-shopping"></i></div>
-        <div>
-          <button class="btn rounded-full bg-bg-btn-full">Book Consult <i class="fa-solid fa-arrow-right bg-primary-btn text-white p-1.5 rounded-full rotate-[320deg] w-[26px]"></i></button>
+        <div class="hidden lg:flex bg-white p-2 rounded-full"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="hidden lg:flex bg-white p-2 rounded-full"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="hidden lg:flex">
+          <button class="btn rounded-full border-none bg-bg-btn-full text-primary-btn font-extrabold text-xl">Book Consult <i class="fa-solid fa-arrow-right bg-primary-btn text-white p-1.5 rounded-full rotate-[320deg] w-[32px]"></i></button>
         </div>
-        <div class="dropdown lg:hidden">
-          <div tabindex="0" role="button" class="btn m-1">Click</div>
+        <div class="dropdown dropdown-end lg:hidden">
+          <div tabindex="0" role="button" class="btn bg-white rounded-full"><i class="fa-solid fa-bars"></i></div>
           <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-            <li><a>Item 1</a></li>
-            <li><a>Item 2</a></li>
+            <li><a class="hover:bg-gray-100 hover:rounded-xl p-2" href=""><span class="font-extrabold text-primary-para">Home</span></a></li>
+            <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Services</a></li>
+            <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Portfolio</a></li>
+            <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Blogs</a></li>
+            <li><a class="hover:bg-gray-100 hover:rounded-xl p-2 text-primary-nav" href="">Contact Us</a></li>
           </ul>
         </div>
       </div>
     </nav>
   <!-- Banner here -->
-   <div class="container mx-auto border mt-12">
+   <div class="container flex flex-col items-center mx-auto mt-12">
     <!-- banner image -->
      <div class="flex justify-center">
       <img src="assets/banner.png" alt="">
      </div>
     <!-- banner header -->
      <div class="mx-auto text-center lg:w-[60%] mt-6">
-      <h1 class="text-primary-header font-extrabold text-6xl">A barn house of this design has a striking appearance</h1>
+      <h1 class="text-primary-header font-extrabold text-3xl lg:text-6xl">A barn house of this design has a striking appearance</h1>
      </div>
     <!-- banner para -->
      <div class="mx-auto lg:w-[62%] mt-6">
-      <p class="text-primary-para font-medium text-center">
+      <p class="text-primary-para text-sm lg:text-base font-medium text-center">
         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
       </p>
      </div>
     <!-- banner btn -->
-     <div class="btn mt-6">
-      <button>View Details</button>
+     <div class="btn mt-6 rounded-full bg-bg-btn-light w-[95%] lg:w-auto gap-2">
+      <button class="text-primary-header text-bold text-xl">View Details</button>
+      <div><i class="fa-solid fa-arrow-right bg-bg-btn-full text-black p-1.5 rounded-full rotate-[320deg] w-[26px]"></i></div>
      </div>
    </div>
   </header>
