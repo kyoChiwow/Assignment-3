@@ -281,8 +281,8 @@
      </div>
    </section>
 
-  <!-- Portfolio Section -->
-   <section class="bg-white mt-8 lg:mt-28 px-5 lg:px-5">
+  <!-- Portfolio Section (Challenge Part) -->
+   <section class="bg-white mt-8 lg:mt-28 px-5 lg:px-5 pb-5">
     <!-- Portfolio Container -->
      <div class="container mx-auto pt-20">
       <!-- we works btn -->
@@ -352,15 +352,154 @@
          
          <!-- card 5  -->
          <div class="lg:col-span-3 border border-[#E9E9E9] rounded-xl p-6">
-          <img class="w-full lg:h-full" src="assets/img5.png" alt="">
+          <img class="w-full lg:h-full hidden sm:flex" src="assets/img5.png" alt="">
+          <img class="w-full lg:h-full sm:hidden" src="assets/img3.png" alt="">
          </div>
          <!-- card 6  -->
          <div class="lg:col-span-3 border border-[#E9E9E9] rounded-xl p-6 sm:hidden">
           <img class="w-full lg:h-full" src="assets/img5.png" alt="">
          </div>
-        
        </div>
-    
+   </section>
+
+  <!-- Review and FAQ Section (Challenge part) -->
+   <section class="container mx-auto rounded-xl p-6 mt-20 bg-gray-100">
+   <!-- Header -->
+    <div class="mb-10 text-center">
+      <h1 class="text-primary-header font-extrabold text-3xl lg:text-4xl mb-3">Client Reviews and FAQ</h1>
+      <p class="text-primary-para font-medium">Here we have complied some reviews and some FAQ for you. This way you will have a clearer idea of what kind of a quality we offer.</p>
+    </div>
+    <!-- Top side -->
+     <div class="mb-20">
+      <!-- review cards carousel -->
+       <div class="lg:flex justify-between lg:gap-8 space-y-5 lg:space-y-0">
+        <!-- card 1 -->
+        <div class="card lg:w-[30%] lg:h-[30%] 2xl:h-auto shadow-xl lg:scale-110 bg-gray-100">
+          <figure class="p-2">
+            <img
+              src="assets/h1.png"
+              alt="car!" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Arthur Currey</h2>
+            <div class="rating rating-sm">
+              <input type="radio" name="rating-5" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-5" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-5" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-5" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-5" class="mask mask-star bg-orange-500" checked="checked" />
+            </div>
+            <p class="text-primary-para">Rinterio is my go to choice when it comes to building your dream projects. Just check out the design they made for me!</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card lg:w-[30%] lg:h-[30%] 2xl:h-auto shadow-xl bg-gray-100">
+          <figure class="p-2">
+            <img
+              src="assets/h2.png"
+              alt="car!" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Barry Allen</h2>
+            <div class="rating rating-sm">
+              <input type="radio" name="rating-4" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-4" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-4" class="mask mask-star bg-orange-500" checked="checked" />
+              <input type="radio" name="rating-4" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-4" class="mask mask-star bg-orange-500" />
+            </div>
+            <p class="text-primary-para">I always wanted modern looking house for me and my family. And Rintario did just that.</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card lg:w-[30%] lg:h-[40%] 2xl:h-auto shadow-xl lg:scale-110 bg-gray-100">
+          <figure class="p-2">
+            <img
+              src="assets/h3.png"
+              alt="car!" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Victor Stone</h2>
+            <div class="rating rating-sm">
+              <input type="radio" name="rating-3" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-3" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-3" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-3" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-3" class="mask mask-star bg-orange-500" checked="checked"/>
+            </div>
+            <p class="text-primary-para">Wanted a bunglow type house with modern features, <span class="2xl:hidden">Talked it out with Rinterio. So I reached them! and they called back</span> <span class="lg:hidden 2xl:block">They heard everything that I have to say and they did not disappoint with the design!</span></p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card lg:w-[30%] lg:h-[40%] 2xl:h-auto shadow-xl bg-gray-100">
+          <figure class="p-2">
+            <img
+              src="assets/h4.png"
+              alt="car!" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Bruce Wayne</h2>
+            <div class="rating rating-sm">
+              <input type="radio" name="rating-2" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-2" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-2" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-2" class="mask mask-star bg-orange-500" checked="checked" />
+              <input type="radio" name="rating-2" class="mask mask-star bg-orange-500" />
+            </div>
+            <p class="text-primary-para">Modern type house with a commercial touch to it. I always wanted a house like that. <span class="lg:hidden 2xl:block">And look at what Rinterio made for me. Absolutely stoked!</span></p>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <!-- <div class="card lg:w-[20%] shadow-xl bg-gray-100">
+          <figure class="p-2">
+            <img
+              src="assets/h5.png"
+              alt="car!" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Clarke Kent</h2>
+            <div class="rating rating-sm">
+              <input type="radio" name="rating-1" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-1" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-1" class="mask mask-star bg-orange-500" />
+              <input type="radio" name="rating-1" class="mask mask-star bg-orange-500" checked="checked" />
+              <input type="radio" name="rating-1" class="mask mask-star bg-orange-500" />
+            </div>
+            <p class="text-primary-para">Alawys wanted a country type house for myself so that I can take my family up there for vacation.And Rinterio did not disappoint!</p>
+          </div>
+        </div> -->
+       </div>
+
+     </div>
+    <!-- Btm side -->
+    <div class="join join-vertical w-full bg-gray-200 shadow-xl">
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" checked="checked" />
+        <div class="collapse-title text-xl font-medium">How Long Will My Project Take?</div>
+        <div class="collapse-content">
+          <p>Your construction project’s duration will vary greatly depending on several project-specific factors, like the project’s size and complexity. Smaller projects may be completed in a few weeks or months. Larger projects can take several months or years. Regardless, your project’s schedule should be clearly communicated and remain updated throughout the process.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">What is Design-Build and How Is It Helpful?</div>
+        <div class="collapse-content">
+          <p>Design-Build streamlines and reduces the project-related responsibilities of the owner while also reducing the owner’s risk and encouraging more collaboration between project team members. The owner will choose one entity to handle the design and construction teams.
+
+            This entity (the design-builder) holds all contracts and serves as the main point of contact for the various partners, subcontractors, and vendors. The owner generally experiences fewer change orders, a reduced administrative burden, lower overall project costs, and fewer disputes that result in litigation.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">How Do I Get My Construction Project Started?</div>
+        <div class="collapse-content">
+          <p>Depending on which project delivery method you’re interested in pursuing, you’ll either want to find a design-build contractor or an architect. From here, you’ll work out a plan for your project. Design-build offers a plethora of benefits to project owners, from a reduction of risk and responsibility for the owner to a more collaborative team.</p>
+        </div>
+      </div>
+    </div>
+     </div>
+
+     </div>
    </section>
   </main>
 
