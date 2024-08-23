@@ -36,6 +36,7 @@
             'bg-white': 'rgba(255, 255, 255, 1)',
             'bg-white-none': 'rgba(0, 0, 0, 0)',
             'bg-btn-light': 'rgba(171, 239, 95, 0.5)',
+            'bg-btn-light-another': 'rgba(171, 239, 95, 0.2)',
             'bg-btn-full': 'rgba(171, 239, 95, 1)',
           }
         }
@@ -155,7 +156,7 @@
    </section>
 
   <!-- Stat Section -->
-   <section class="p-5 lg:p-0">
+   <section class="p-5 lg:px-5">
     <!-- Stat Grid -->
      <div class="bg-white rounded-xl container mx-auto grid grid-cols-1 lg:grid-cols-4 p-6 gap-12 lg:gap-0 lg:p-8">
       <!-- card 1 -->
@@ -214,7 +215,7 @@
    </section>
 
   <!-- Works Process Section -->
-   <section class="container mx-auto mt-8 lg:mt-28 px-5 lg:px-0">
+   <section class="container mx-auto mt-8 lg:mt-28 px-5 lg:px-5">
     <!-- we works btn -->
      <div class="flex justify-center items-center">
       <div class="btn btn-sm bg-white rounded-full flex gap-2">
@@ -278,6 +279,88 @@
         </div>
        </div>
      </div>
+   </section>
+
+  <!-- Portfolio Section -->
+   <section class="bg-white mt-8 lg:mt-28 px-5 lg:px-5">
+    <!-- Portfolio Container -->
+     <div class="container mx-auto pt-20">
+      <!-- we works btn -->
+        <div class="flex justify-center items-center">
+          <div class="btn btn-sm bg-bg-btn-light-another rounded-full flex gap-2">
+            <div><i class="fa-solid fa-arrow-right text-primary-para"></i></div>
+            <button class="text-primary-para font-bold">Explore our Latest work</button>
+          </div>
+        </div>
+      <!-- Header side -->
+       <div class="mt-4 flex flex-col justify-center items-center text-center">
+        <h1 class="mb-6 text-primary-header font-extrabold text-2xl lg:text-5xl">Our Latest Portfolio</h1>
+        <p class="mb-8 text-primary-para font-medium text-sm lg:text-base">Here you can check out our latest projects, that we built up into a portfolio for you to check out. <br class="hidden lg:block"> This will give you an idea of what kind of projects we have been taking, and you can choose your own design based on these!</p>
+       </div>
+      <!-- Portfolio Cards -->
+       <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
+        <!-- card 1 -->
+         <div class="lg:col-span-8 border border-[#E9E9E9] rounded-xl lg:flex gap-x-6 p-6">
+        <!-- card left -->
+          <div class="lg:w-[40%] 2xl:w-[30%] flex items-center mb-6 lg:mb-0">
+            <img class="w-full h-full" src="assets/img1.png" alt="">
+          </div>
+        <!-- card right -->
+          <div class="lg:w-[60%] 2xl:w-[70%] flex flex-col justify-center">
+            <!-- texts -->
+              <div>
+                <h1 class="text-primary-para font-extrabold text-xl lg:text-2xl mb-5">Residential Home</h1>
+                <p class="text-primary-nav font-medium text-sm lg:text-base mb-5">This is our latest project of a residential home. Our client's vision was a duplex house that provides him privacy and calmness. <span class="sm:hidden 2xl:block">So, We made his vision into a reality by making this design and ultimately building this up from scratch.</span></p>
+              </div>
+            <!-- Details btn -->
+              <div class="flex mt-6 rounded-xl bg-none lg:w-auto gap-2">
+                <button class="text-primary-header font-extrabold text-xl">View Details</button>
+                <div><i class="fa-solid fa-arrow-right bg-bg-btn-full text-black p-1.5 rounded-full rotate-[320deg] w-[26px]"></i></div>
+              </div>
+          </div>
+         </div>
+        <!-- card 2  -->
+         <div class="lg:col-span-4 border border-[#E9E9E9] rounded-xl p-6">
+          <img class="w-full lg:h-full" src="assets/img2.png" alt="">
+         </div>
+        <!-- card 3  -->
+         <div class="lg:col-span-3 border border-[#E9E9E9] rounded-xl p-6">
+          <img class="w-full lg:h-full sm:flex hidden" src="assets/img3.png" alt="">
+          <img class="w-full lg:h-full sm:hidden" src="assets/img5.png" alt="">
+         </div>
+
+         <!-- card 4 -->
+         <div class="lg:col-span-6 border border-[#E9E9E9] rounded-xl lg:flex gap-x-6 p-6">
+          <!-- card left -->
+            <div class="lg:w-[60%] 2xl:w-[50%] flex items-center mb-6 lg:mb-0">
+              <img class="w-full h-full" src="assets/img4.png" alt="">
+            </div>
+          <!-- card right -->
+            <div class="lg:w-[40%] 2xl:w-[50%] flex flex-col justify-center">
+              <!-- texts -->
+                <div>
+                  <h1 class="text-primary-para font-extrabold text-xl lg:text-2xl mb-5">Commercial</h1>
+                  <p class="text-primary-nav font-medium text-sm lg:text-base mb-5">Here is an example of an commercial design, that we took on about 2 weeks ago. <span class="lg:hidden 2xl:block">This particular client wanted an eco friendly commercial space for his office.</span></p>
+                </div>
+              <!-- Details btn -->
+                <div class="flex mt-6 rounded-xl bg-none lg:w-auto gap-2">
+                  <button class="text-primary-header font-extrabold text-xl">View Details</button>
+                  <div><i class="fa-solid fa-arrow-right bg-bg-btn-full text-black p-1.5 rounded-full rotate-[320deg] w-[26px]"></i></div>
+                </div>
+            </div>
+           </div>
+         
+         <!-- card 5  -->
+         <div class="lg:col-span-3 border border-[#E9E9E9] rounded-xl p-6">
+          <img class="w-full lg:h-full" src="assets/img5.png" alt="">
+         </div>
+         <!-- card 6  -->
+         <div class="lg:col-span-3 border border-[#E9E9E9] rounded-xl p-6 sm:hidden">
+          <img class="w-full lg:h-full" src="assets/img5.png" alt="">
+         </div>
+        
+       </div>
+    
    </section>
   </main>
 
